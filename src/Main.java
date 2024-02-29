@@ -31,11 +31,10 @@ public class Main {
                 case "right":
                     p1.moveRight();
                     break;
+                case "done":
+                    System.exit(0);
                 default:
                 continue;
-            }
-            if(state.equalsIgnoreCase("done")){
-                break;
             }
             System.out.println("x:y position ("+p1.getX()+"."+p1.getY()+")");
         }
